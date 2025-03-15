@@ -1,0 +1,127 @@
+<div class="landing-container">
+    <header>
+        <nav class="navbar">
+            <div class="logo">🔗 <span>CryptoMembresías</span></div>
+            <button class="btn-primary" [routerLink]="['/membresias']">
+                Ver Membresías
+            </button>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Tecnología Blockchain para Membresías Exclusivas</h1>
+            <p>
+                Descubre cómo utilizamos Solidity, Ganache y contratos
+                inteligentes para crear un sistema
+                de membresías seguro, transparente y descentralizado.
+            </p>
+            <button class="btn-cta" [routerLink]="['/membresias']">
+                Explorar Membresías
+            </button>
+        </div>
+        <div class="hero-image">
+            <img src="blockchain-1.webp"
+                alt="Blockchain Technology Illustration" />
+        </div>
+    </section>
+
+    <section class="features">
+        <h2>Beneficios de Nuestras Membresías</h2>
+        <div class="features-grid">
+            <div class="feature">
+                <div class="feature-icon">💎</div>
+                <h3>Propiedad Digital</h3>
+                <p>Tu membresía es un NFT único, verificable en la
+                    blockchain.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🔐</div>
+                <h3>Seguridad y Transparencia</h3>
+                <p>Protegemos tus activos con tecnología blockchain
+                    descentralizada.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🎟️</div>
+                <h3>Acceso VIP</h3>
+                <p>Participa en eventos exclusivos y obtén recompensas.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="tech-section">
+        <h2>Tecnologías que Utilizamos</h2>
+        <div class="tech-grid">
+            <div class="tech-card">
+                <div class="tech-icon">
+                    <img src="logo.svg"
+                        alt="Solidity Icon" />
+                </div>
+                <h3>Solidity</h3>
+                <p>
+                    Lenguaje de programación para desarrollar contratos
+                    inteligentes en la blockchain de Ethereum.
+                    Permite crear reglas de negocio inmutables y transparentes
+                    para nuestras membresías.
+                </p>
+            </div>
+            <div class="tech-card">
+                <div class="tech-icon">
+                    <img src="ganache-logo.png"
+                        alt="Ganache Icon" />
+                </div>
+                <h3>Ganache</h3>
+                <p>
+                    Entorno de desarrollo local para Ethereum que permite probar
+                    contratos inteligentes
+                    en un ambiente seguro antes de implementarlos en la red
+                    principal.
+                </p>
+            </div>
+            <div class="tech-card">
+                <div class="tech-icon">
+                    <img src="contracts.png"
+                        alt="Smart Contracts Icon" />
+                </div>
+                <h3>Contratos Inteligentes</h3>
+                <p>
+                    Programas autónomos que ejecutan automáticamente las
+                    condiciones de un acuerdo.
+                    Nuestras membresías utilizan contratos inteligentes para
+                    garantizar la propiedad y los beneficios.
+                </p>
+            </div>
+            <div class="tech-card">
+                <div class="tech-icon">
+                    <img src="node.png?height=80&width=80"
+                        alt="Node.js Icon" />
+                </div>
+                <h3>Node.js</h3>
+                <p>
+                    Entorno de ejecución para JavaScript que utilizamos para
+                    crear el backend
+                    que interactúa con la blockchain y gestiona nuestro sistema
+                    de membresías.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2>¿Listo para explorar nuestro proyecto?</h2>
+            <p>Descubre todas las posibilidades que ofrecen nuestras membresías
+                basadas en blockchain.</p>
+            <button class="btn-cta" [routerLink]="['/membresias']">
+                Ver Membresías Disponibles
+            </button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>© 2024 CryptoMembresías - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <router-outlet></router-outlet>
+</div>
