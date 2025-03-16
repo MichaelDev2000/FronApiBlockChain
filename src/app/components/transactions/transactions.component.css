@@ -114,3 +114,91 @@
     background: linear-gradient(135deg, #6c5ce7, #74b9ff);
     transform: scale(1.05);
 }
+
+.transactions-container {
+    display: flex;
+    margin-top: 60px;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.transaction-card {
+    background: linear-gradient(135deg, #6c5ce7, #74b9ff);
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    padding: 1.8rem;
+    width: 380px;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+}
+
+.transaction-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.card-header h3 {
+    margin: 0;
+    font-size: 1.4rem;
+}
+
+.status {
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.status.completed {
+    background: rgba(46, 204, 113, 0.2);
+    color: #25e776;
+    border: 0.5px solid #25e776;
+}
+
+.status.pending {
+    background: rgba(241, 196, 15, 0.2);
+    color: #f1c40f;
+}
+
+.status.failed {
+    background: rgba(231, 76, 60, 0.2);
+    color: #e74c3c;
+}
+
+.transaction-details {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.wallet {
+    font-family: monospace;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 3px 6px;
+    border-radius: 5px;
+}
+
+.hash-container {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 6px;
+    border-radius: 6px;
+    overflow-x: auto;
+}
+
+.hash {
+    font-family: monospace;
+    font-size: 0.85rem;
+    display: block;
+    white-space: nowrap;
+}

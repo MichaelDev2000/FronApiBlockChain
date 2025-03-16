@@ -1,10 +1,17 @@
 <div class="landing-container">
     <header>
         <nav class="navbar">
-            <div class="logo">🔗 <span>CryptoMembresías</span></div>
-            <button class="btn-primary" [routerLink]="['/membresias']">
-                Ver Membresías
-            </button>
+            <div class="logo" [routerLink]="['']" style="cursor: pointer;">🔗
+                <span>CryptoMembresías</span></div>
+            <div class="buttonContainers">
+                <button class="btn-primary" [routerLink]="['/membresias']">
+                    Ver Membresías
+                </button>
+                <button class="btn-primary" [routerLink]="['/transacciones']">
+                    Ver Transacciones
+                </button>
+            </div>
+
         </nav>
     </header>
 

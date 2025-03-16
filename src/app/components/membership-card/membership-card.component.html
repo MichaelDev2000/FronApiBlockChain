@@ -1,1 +1,29 @@
-<p>membership-card works!</p>
+<div class="landing-container">
+    <header>
+        <nav class="navbar">
+            <div class="logo" [routerLink]="['']" style="cursor: pointer;">🔗 <span>CryptoMembresías</span></div>
+            <button class="btn-primary" [routerLink]="['/transacciones']">
+                Ver Transacciones
+            </button>
+        </nav>
+    </header>
+
+    <div class="memberships-container">
+        <div *ngFor="let membership of memberships" class="membership-card">
+            <h3>{{ membership.name }}</h3>
+            <p>{{ membership.description }}</p>
+            <p class="price"><strong>Precio:</strong> {{ membership.price }}
+                ETH</p>
+            <p class="duration"><strong>Duración:</strong> {{
+                membership.duration_days }} días</p>
+            <button class="btn-buy"
+                (click)="buyMembership(membership)">Comprar</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>© 2024 CryptoMembresías - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</div>

@@ -1,0 +1,45 @@
+
+<div class="landing-container">
+    <header>
+        <nav class="navbar">
+            <div class="logo" [routerLink]="['']" style="cursor: pointer;">🔗
+                <span>CryptoMembresías</span></div>
+            <button class="btn-primary" [routerLink]="['/membresias']">
+                Ver Membresías
+            </button>
+        </nav>
+    </header>
+
+    <div class="transactions-container">
+        <div *ngFor="let transaction of transactions" class="transaction-card">
+            <div class="card-header">
+                <h3>{{ transaction.user_info.first_name }} {{
+                    transaction.user_info.last_name }}</h3>
+                <span class="status" [ngClass]="transaction.status">{{
+                    transaction.status }}</span>
+            </div>
+
+            <p><strong>Email:</strong> {{ transaction.user_info.email }}</p>
+            <p><strong>Wallet:</strong> <span class="wallet">{{
+                    transaction.user_info.wallet_address }}</span></p>
+
+            <div class="transaction-details">
+                <p><strong>Monto:</strong> {{ transaction.amount }} {{
+                    transaction.currency }}</p>
+                <p><strong>Fecha:</strong> {{ transaction.createdAt | date:
+                    'short' }}</p>
+            </div>
+
+            <p><strong>Hash:</strong></p>
+            <div class="hash-container">
+                <span class="hash">{{ transaction.transaction_hash }}</span>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>© 2024 CryptoMembresías - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</div>
